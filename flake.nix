@@ -59,7 +59,7 @@
         zhtw-mcp =
           let
             cargoToml = builtins.fromTOML (builtins.readFile "${zhtw-mcp-src}/Cargo.toml");
-            openccRev = "0ad13e022313ab62daf9b7ef79047b2d084a8868";
+            openccRev = "f3c31193d01b3aca8566316c05ac17e16925823c";
             openccDictUrl =
               file: "https://raw.githubusercontent.com/BYVoid/OpenCC/${openccRev}/data/dictionary/${file}";
             openccDicts = final.linkFarm "opencc-dictionaries" [
@@ -67,7 +67,7 @@
                 name = "STPhrases.txt";
                 path = final.fetchurl {
                   url = openccDictUrl "STPhrases.txt";
-                  hash = "sha256-nC1CoWSP9+x+d003fHpz9yECr6TmGMLZ3dlfkvq2lgA=";
+                  hash = "sha256-T+X2AuoqVjtP7GMxwt4pe3yAL5RftiHgDW/bKvTZKRw=";
                 };
               }
               {
