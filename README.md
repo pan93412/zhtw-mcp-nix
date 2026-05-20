@@ -12,10 +12,11 @@ Run the CLI directly:
 nix run github:pan93412/zhtw-mcp-nix -- lint README.md
 ```
 
-Register it with Claude Code without installing a global binary:
+Register it with Claude Code and/or Codex without installing a global binary:
 
 ```bash
-claude mcp add zhtw-mcp -- nix run github:pan93412/zhtw-mcp-nix --
+claude mcp add zhtw-mcp -s user -- nix run github:pan93412/zhtw-mcp-nix --
+codex mcp add zhtw-mcp nix run github:pan93412/zhtw-mcp-nix --
 ```
 
 For Codex CLI or other MCP clients, use `nix run` as the server command:
