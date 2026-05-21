@@ -61,17 +61,17 @@
     "zhtw-mcp-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1778254222,
-        "narHash": "sha256-PILeuyTcFGoBQ1NK3qdAz8heOwQFdyDSxjtPGFSApXg=",
+        "lastModified": 1779357884,
+        "narHash": "sha256-PmchosXLYV0jBO03GpwpbeW5ONi0iO5h7TZxp2mnzVs=",
         "owner": "sysprog21",
         "repo": "zhtw-mcp",
-        "rev": "9b977caaa4671473d4175828ed1d5970761aa192",
+        "rev": "a2d53f4a4ef6821b974cd4b435a340133071b7d3",
         "type": "github"
       },
       "original": {
         "owner": "sysprog21",
         "repo": "zhtw-mcp",
-        "rev": "9b977caaa4671473d4175828ed1d5970761aa192",
+        "rev": "a2d53f4a4ef6821b974cd4b435a340133071b7d3",
         "type": "github"
       }
     }

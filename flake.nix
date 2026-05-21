@@ -8,7 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     zhtw-mcp-src = {
-      url = "github:sysprog21/zhtw-mcp/9b977caaa4671473d4175828ed1d5970761aa192";
+      url = "github:sysprog21/zhtw-mcp/a2d53f4a4ef6821b974cd4b435a340133071b7d3";
       flake = false;
     };
   };
@@ -59,7 +59,7 @@
         zhtw-mcp =
           let
             cargoToml = builtins.fromTOML (builtins.readFile "${zhtw-mcp-src}/Cargo.toml");
-            openccRev = "f3c31193d01b3aca8566316c05ac17e16925823c";
+            openccRev = "472e8957788e14835b2ff806cc7e305732b2c7f6";
             openccDictUrl =
               file: "https://raw.githubusercontent.com/BYVoid/OpenCC/${openccRev}/data/dictionary/${file}";
             openccDicts = final.linkFarm "opencc-dictionaries" [
@@ -67,14 +67,14 @@
                 name = "STPhrases.txt";
                 path = final.fetchurl {
                   url = openccDictUrl "STPhrases.txt";
-                  hash = "sha256-T+X2AuoqVjtP7GMxwt4pe3yAL5RftiHgDW/bKvTZKRw=";
+                  hash = "sha256-eljboErDBjRGX7BIIVSWWraMVYROVnvtpj//xfVe7QA=";
                 };
               }
               {
                 name = "STCharacters.txt";
                 path = final.fetchurl {
                   url = openccDictUrl "STCharacters.txt";
-                  hash = "sha256-nO37i/E6IgCHED2altn1YFDDQcJKgJy85chckEVFZVc=";
+                  hash = "sha256-cUsOfiYVKpnLIhV30WBXSoMHGt6mNWppJnFXRSFCKDg=";
                 };
               }
               {
